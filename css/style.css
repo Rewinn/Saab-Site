@@ -1,7 +1,8 @@
+
 html {
 	height:100%;
 	width: 100%;
-	background: url(../img/saab900-sky-twitter.jpg) no-repeat bottom center fixed; 
+	background: url(../img/saab900-sky-full.jpg) no-repeat bottom center fixed; 
   	background-size: cover;
 }
 
@@ -17,7 +18,7 @@ body {
 	     -moz-user-select: none;
 	      -ms-user-select: none;
 	          user-select: none;
-}
+} 
 
 .sub-title {
 	display: flex;
@@ -127,6 +128,7 @@ video.gfyVid {
 	text-align: center;
 	z-index: 5;
 }
+
 
 
 
