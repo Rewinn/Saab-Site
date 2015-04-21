@@ -13,19 +13,9 @@ $(document).ready(function() {
     //VIDEO MOBILE
     var hammertime = new Hammer(document.body);
 
-    hammertime.on('tap', function(evt) {
+    hammertime.on('tap', function(evt) {
         $('#music').trigger("play");
         var randomGfy = Math.floor(Math.random() * $('.gfy').length);
         $('.gfy').hide().eq(randomGfy).show();      
     });
 });
-
-
-
-
-
-
-
-
-
-
