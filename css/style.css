@@ -24,6 +24,7 @@ body {
 } 
 
 header {
+    margin-top: 8%;
     display: flex;
     display: -webkit-box;
     display: -webkit-flex;
@@ -43,13 +44,14 @@ header {
 
 h1 {
     letter-spacing: -4px;
-    width: 80%;
+    word-spacing: 4px;
+    width: 90%;
     color: #BEB735;
-    font-size: 7vmax;
+    font-size: 4vmax;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     position: fixed;
-    top: 15%;
+    top: 10%;
     left: 50%;
     margin: auto;
     text-align: center;
@@ -61,13 +63,15 @@ h1 {
 h1 span {
     font-family: 'Archivo Black', sans-serif;
     font-weight: 900; 
-    word-spacing: 5px;
+    font-size: 6.5vmax;
+    word-spacing: 8px;
+    letter-spacing: -2px;
 }
 
 h2, i {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    font-size: 1.5vmax;
+    font-size: 1.25vmax;
     -webkit-animation: flickerAnimation 8.0s infinite;
        -moz-animation: flickerAnimation 8.0s infinite;
             animation: flickerAnimation 8.0s infinite;
@@ -155,11 +159,11 @@ video.gfyVid {
     }
 
     header {
-      margin-top: 130%;
+      margin-top: 145%;
     }
 
     h1 {
-        top: 80%;
+        top: 90%;
     }
 
     i.fa.fa-twitter.fa-2x, i.fa.fa-facebook.fa-2x {
@@ -170,7 +174,7 @@ video.gfyVid {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (orientation: landscape) {
     h1 {
-        top: 20%;
+        top: 10%;
     }
 }
 
