@@ -10,7 +10,6 @@ $(document).ready(function() {
         $('#letter-key').html(String.fromCharCode(event.keyCode)).hide();
     });
 
-    //VIDEO MOBILE
     var hammertime = new Hammer(document.body);
 
     hammertime.on('tap', function(evt) {
@@ -19,3 +18,7 @@ $(document).ready(function() {
         $('.gfy').hide().eq(randomGfy).show();      
     });
 });
+
+
+
+
