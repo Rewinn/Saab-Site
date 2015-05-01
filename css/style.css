@@ -13,6 +13,7 @@ body {
     height:100%;
     width: 100%;
     text-transform: uppercase;
+    font-family: 'Archivo Black', sans-serif;
     color: #f0f0f0;
     background-color: transparent;
     -webkit-touch-callout: none;
@@ -23,7 +24,7 @@ body {
               user-select: none;
 } 
 
-header {
+section {
     margin-top: 8%;
     display: flex;
     display: -webkit-box;
@@ -48,8 +49,6 @@ h1 {
   width: 100%;
   color: #BEB735;
   font-size: 4vmax;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
   position: absolute;
   top: 5%;
   margin: 0;
@@ -57,16 +56,14 @@ h1 {
 }
 
 h1 span {
-    font-family: 'Archivo Black', sans-serif;
-    font-weight: 900; 
     font-size: 6.5vmax;
     word-spacing: 8px;
     letter-spacing: -2px;
 }
 
-h2, i {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
+h2 {
+    font-family: 'Codystar', cursive;
+    padding: 0 10px;
     font-size: 1.25vmax;
     -webkit-animation: flickerAnimation 8.0s infinite;
        -moz-animation: flickerAnimation 8.0s infinite;
@@ -103,11 +100,11 @@ h3 {
 
 
 /* GFYCAT */
-div {
+div[style] {
     width: 100%         !important;
     height: 100%        !important;
-    object-fit: contain !important;
-}
+} 
+
 
 img.gfyGif {
     width: 100%;
@@ -135,44 +132,35 @@ video.gfyVid {
 
 
 
-/* SOCIAL MEDIA	*/
-.fa {
-    color: white;
-    padding: 15px;
-}
-
-.fa:hover {
-    color: #212E55;
-}
-
-
-
 /* MEDIA QUERIES */
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (orientation: portrait) {
-    html {
-        background: url(../img/saab-900-intelligent.jpg) no-repeat top center fixed; 
-        background-size: cover;
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 1024px) 
+    and (orientation: portrait) {
+        html {
+            background: url(../img/saab-900-intelligent.jpg) no-repeat top center fixed; 
+            background-size: cover;
+        }
+        header {
+            margin-top: 145%;
+        }
+
+        h1 {
+            top: 85%;
+        }
     }
 
-    header {
-        margin-top: 145%;
-    }
 
-    h1 {
-        top: 90%;
-    }
 
-    i.fa.fa-twitter.fa-2x, i.fa.fa-facebook.fa-2x {
-      font-size: smaller;
-    }
 
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (orientation: landscape) {
-    h1 {
-        top: 10%;
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 768px) 
+    and (orientation: landscape) {
+        h1 {
+            top: 10%;
+        }
     }
-}
 
 
 

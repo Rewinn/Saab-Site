@@ -20,7 +20,7 @@
         <script src="./js/hammer.js"></script>
 
         <!-- FONTS -->
-        <link href='http://fonts.googleapis.com/css?family=Quicksand|Archivo+Black' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Codystar|Archivo+Black' rel='stylesheet' type='text/css'>
 
         <!-- Twitter Card data -->
         <meta name="twitter:card" content="summary" />
@@ -39,23 +39,30 @@
     </head>
     <body>  
         <div id="fb-root"></div>
-            <script>(function(d, s, id) {
+        <script>
+            (function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id)) return;
                 js = d.createElement(s); js.id = id;
                 js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
                 fjs.parentNode.insertBefore(js, fjs);
-            } (document, 'script', 'facebook-jssdk'));</script>
+            }(document, 'script', 'facebook-jssdk'));
+        </script>        
         <audio id="music" preload="auto" autoplay loop>
             <source src="./audio/saabsong.ogg">
             <source src="./audio/saabsong.mp3">
         </audio> 
         <header>
             <h1>You Deserve a <span>SAAB</span></h1>
-            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
-            <h2>Crank up the sound. Press any letter.</h2>
-            <a href="https://twitter.com/intent/tweet?button_hashtag=SAABForever&text=You%20deserve%20a%20SAAB."></a>
-        </header> 
+        </header>
+        <section>
+            <div class="fb-share-button" data-href="" data-layout="button"></div>
+            <h2>Press a letter &amp; crank up the sound.</h2>
+            <a class="twitter-share-button" href="https://twitter.com/share" data-text="You deserve a Saab. Crank up the sound. Tap the screen or press a key. #SAABforever" data-count="none">Tweet</a>
+            <script>
+            window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+            </script>
+        </section> 
         <div class="gfy" data-key="65">
             <img class="gfyitem" data-id="UnawareSparseDuckbillcat" data-controls="false" data-dot="false" data-perimeter="true" data-expand="true" src="./img/1x1.png" alt="Doors opening to reveal a Saab">
         </div> 
