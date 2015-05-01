@@ -21,7 +21,6 @@
 
         <!-- FONTS -->
         <link href='http://fonts.googleapis.com/css?family=Quicksand|Archivo+Black' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
         <!-- Twitter Card data -->
         <meta name="twitter:card" content="summary" />
@@ -39,15 +38,23 @@
         <meta property="og:description" content="Crank up the sound. Tap the screen or press a key." /> 
     </head>
     <body>  
+        <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+                fjs.parentNode.insertBefore(js, fjs);
+            } (document, 'script', 'facebook-jssdk'));</script>
         <audio id="music" preload="auto" autoplay loop>
             <source src="./audio/saabsong.ogg">
             <source src="./audio/saabsong.mp3">
         </audio> 
         <header>
-            <a href="http://www.facebook.com/sharer/sharer.php?u=[URL]&title=[TITLE]"><i class="fa fa-facebook fa-2x"></i></a>
             <h1>You Deserve a <span>SAAB</span></h1>
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
             <h2>Crank up the sound. Press any letter.</h2>
-            <a href="https://twitter.com/intent/tweet?button_hashtag=SAABForever&text=You%20deserve%20a%20SAAB."><i class="fa fa-twitter fa-2x"></i></a>
+            <a href="https://twitter.com/intent/tweet?button_hashtag=SAABForever&text=You%20deserve%20a%20SAAB."></a>
         </header> 
         <div class="gfy" data-key="65">
             <img class="gfyitem" data-id="UnawareSparseDuckbillcat" data-controls="false" data-dot="false" data-perimeter="true" data-expand="true" src="./img/1x1.png" alt="Doors opening to reveal a Saab">

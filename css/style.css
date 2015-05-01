@@ -43,21 +43,17 @@ header {
 }
 
 h1 {
-    letter-spacing: -4px;
-    word-spacing: 4px;
-    width: 90%;
-    color: #BEB735;
-    font-size: 4vmax;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    margin: auto;
-    text-align: center;
-    webkit-transform:translate(-50%,-50%); 
-        -ms-transform:translate(-50%,-50%); 
-            transform:translate(-50%,-50%);
+  letter-spacing: -4px;
+  word-spacing: 4px;
+  width: 100%;
+  color: #BEB735;
+  font-size: 4vmax;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  position: absolute;
+  top: 5%;
+  margin: 0;
+  text-align: center;
 }
 
 h1 span {
