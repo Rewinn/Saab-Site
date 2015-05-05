@@ -33,7 +33,7 @@ h1 {
   width: 100%;
   color: #BEB735;
   margin: 0;
-  top: 10%;
+  top: 3%;
 }
 
 h1 span {    
@@ -47,7 +47,7 @@ h2 {
     font-family: 'Codystar', cursive;
     text-align: center;
     font-size: 1.25vmax;
-    margin-top: 3%;
+    margin-top: 10%;
     -webkit-animation: flickerAnimation 8.0s infinite;
        -moz-animation: flickerAnimation 8.0s infinite;
             animation: flickerAnimation 8.0s infinite;
@@ -128,34 +128,46 @@ video.gfyVid {
 
 
 /* MEDIA QUERIES */
-@media only screen 
-    and (min-device-width: 320px) 
-    and (max-device-width: 1024px) 
-    and (orientation: portrait) {
-        html {
-            background: url(../img/saab-900-intelligent.jpg) no-repeat top center fixed; 
-            background-size: cover;
-        }
-        header {
-            margin-top: 145%;
-        }
-
-        h1 {
-            top: 85%;
-        }
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (orientation: portrait) {
+    html {
+        background: url(../img/saab-900-intelligent.jpg) no-repeat top center fixed; 
+        background-size: cover;
+    }
+    
+    h1 {
+        top: 85%;
     }
 
-
-
-
-@media only screen 
-    and (min-device-width: 320px) 
-    and (max-device-width: 768px) 
-    and (orientation: landscape) {
-        h1 {
-            top: 10%;
-        }
+    h2 {
+        padding-top: 140%;
     }
+
+    .social-media {
+        width: 70%;
+        position: absolute;
+        margin: 0px 0 0 -35%;
+        left: 50%;
+        top:  95%;
+    }
+
+    .fb-share-button {
+        float: left;
+    }
+
+    .twitter-share-button {
+        float: right;
+        padding-top: 0px;
+    }
+}
+
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (orientation: landscape) {
+    h1 {
+        top: 10%;
+    }
+}
 
 
 
