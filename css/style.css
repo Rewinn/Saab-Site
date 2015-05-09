@@ -22,32 +22,34 @@ body {
               user-select: none;
 } 
 
+header {
+    padding: 50px;
+}
+
 h1 {
-  letter-spacing: -2px;
+  letter-spacing: 2px;
   word-spacing: 4px;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  text-align: center;
   font-size: 4vmax;
-  position: absolute;
   width: 100%;
-  color: #BEB735;
-  margin: 0;
-  top: 3%;
+  color: white;
+  margin: 0 0 40px 0;
+  font-size: 2vmax;
+  line-height: 3em;
 }
 
-h1 span {    
+h1 span {
+    display: block;
     letter-spacing: -2px;
-    word-spacing: 8px;
     font-family: 'Archivo Black', sans-serif;
-    font-size: 6.5vmax;
+    font-size: 10vmax;
 }
 
 h2 {
     font-family: 'Codystar', cursive;
-    text-align: center;
+    
     font-size: 1.25vmax;
-    margin-top: 10%;
     -webkit-animation: flickerAnimation 8.0s infinite;
        -moz-animation: flickerAnimation 8.0s infinite;
             animation: flickerAnimation 8.0s infinite;
@@ -83,7 +85,7 @@ h3 {
 
 
 /* GFYCAT */
-div[style] {
+.gyfs div[style] {
     height: 100%      !important;
     width: 100%       !important;
 } 
@@ -115,14 +117,11 @@ video.gfyVid {
 
 /* SOCIAL MEDIA */
 .social-media {
-    position: fixed;
-    top: 1%;
-    left: 1%;
-    width: 70px;
+    margin-top: 40px;
 }
 
 .twitter-share-button {
-    padding-top: 10px;
+   /* padding-top: 10px;*/
 }
 
 
