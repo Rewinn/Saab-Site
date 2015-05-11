@@ -74,6 +74,10 @@ h2 {
     100% { opacity:1; }
 }
 
+.instructions-device {
+    display: none;
+}
+
 h3 {
     text-transform: uppercase;
     margin-bottom: 0;
@@ -137,21 +141,52 @@ video.gfyVid {
         background: url(../img/saab-900-intelligent.jpg) no-repeat top center fixed; 
         background-size: cover;
     }
-    
+
+    header {
+        padding: 0px;
+        background-color: whitesmoke;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 110px;
+    }
+
     h1 {
-        top: 85%;
+        text-align: center;
+        color: #DED2C7;
+        margin: 5px 0px;
+    }
+
+    h1::first-letter {
+        padding-left: 0px;
+    }
+
+    h1 span {
+        display: inline-block;
+        font-size: 6vmax;
+        color: #362D26;
     }
 
     h2 {
-        padding-top: 140%;
+        padding: 0px;
+    }
+
+    .instructions-desktop {
+        display: none;
+    }
+
+    .instructions-device {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .social-media {
-        width: 70%;
+        width: 40%;
         position: absolute;
-        margin: 0px 0 0 -35%;
+        margin: 0px 0 0 -20%;
         left: 50%;
-        top:  95%;
+        top: 75%;
     }
 
     .fb-share-button {
@@ -163,17 +198,5 @@ video.gfyVid {
         padding-top: 0px;
     }
 }
-
-
-
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (orientation: landscape) {
-    h1 {
-        top: 10%;
-    }
-}
-
-
-
 
 
