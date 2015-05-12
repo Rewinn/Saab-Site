@@ -1,202 +1,182 @@
 html {
-    background: url(../img/saab99c.jpg) no-repeat; 
-    background-position: 50% 80%;
-    background-size: cover;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    height: 100%;
- }
-
+  background: url(../img/saab99c.jpg) no-repeat;
+  background-position: 50% 80%;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+}
 body {
-    background-color: transparent;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    color: #f0f0f0;
-    -webkit-touch-callout: none;
-      -webkit-user-select: none;
-       -khtml-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
-} 
-
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  color: #f0f0f0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 header {
-    padding: 10px;
+  padding: 10px;
 }
-
 h1 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 4vmax;
-    color: white;
-    margin: 0 0 20px 0;
-    font-size: 2.25vmax;
-    line-height: 2.25em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 4vmax;
+  color: white;
+  margin: 0 0 20px 0;
+  font-size: 2.25vmax;
+  line-height: 2.25em;
 }
-
-h1::first-letter { 
-    padding-left: 5px;
+h1::first-letter {
+  padding-left: 5px;
 }
-
 h1 span {
-    display: block;
-    letter-spacing: -2px;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 10vmax;
+  display: block;
+  letter-spacing: -2px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 10vmax;
 }
-
 h2 {
-    padding: 10px 0 0 4px;
-    font-family: 'Cookie', cursive;
-    color: #212E55;
-    font-size: 2.25vmax;
-    -webkit-animation: flickerAnimation 8.0s infinite;
-       -moz-animation: flickerAnimation 8.0s infinite;
-            animation: flickerAnimation 8.0s infinite;
+  padding: 10px 0 0 4px;
+  font-family: 'Cookie', cursive;
+  color: #212E55;
+  font-size: 2.25vmax;
+  -webkit-animation: flickerAnimation 8.0s infinite;
+  -moz-animation: flickerAnimation 8.0s infinite;
+  animation: flickerAnimation 8.0s infinite;
 }
-
 @keyframes flickerAnimation {
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@-moz-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
+@-moz-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@-webkit-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 .instructions-device {
-    display: none;
+  display: none;
 }
-
 h3 {
-    text-transform: uppercase;
-    margin-bottom: 0;
-    font-family: 'Archivo Black', sans-serif;
-    font-weight: 900;
-    font-size: 2vw;
-    position: absolute;
-    z-index: 5;
-    bottom: 2%;
-    right: 2%;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 900;
+  font-size: 2vw;
+  position: absolute;
+  z-index: 5;
+  bottom: 2%;
+  right: 2%;
 }
-
-
-
 /* SOCIAL MEDIA */
 .fb-share-button {
   display: block;
 }
-
 .twitter-share-button {
-    padding-top: 10px;
-    display: block;
+  padding-top: 10px;
+  display: block;
 }
-
-
-
 /* GFYCAT */
-.gyfs div[style] {
-    height: 100%      !important;
-    width: 100%       !important;
-} 
-
-img.gfyGif {
-    height: 100%;
-    width: 100%;
-}
-
+.gyfs div[style],
+img.gfyGif,
 video.gfyVid {
-    object-fit: cover !important;
-    height: 100%      !important;
-    width: 100%       !important;
+  height: 100%      !important;
+  width: 100%       !important;
 }
-
+video.gfyVid {
+  object-fit: cover !important;
+}
 .gfy {
-    top: 0; 
-    right: 0; 
-    bottom: 0; 
-    left: 0; 
-    background-color: black; 
-    position: fixed; 
-    display: none; 
-    height: auto;
-    width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  position: fixed;
+  display: none;
+  height: auto;
+  width: 100%;
 }
-
-
-
 /* MEDIA QUERIES */
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (orientation: portrait) {
-    html {
-        background: url(../img/saab-900-intelligent.jpg) no-repeat top center fixed; 
-        background-size: cover;
-    }
-
-    header {
-        padding: 0px;
-        background-color: whitesmoke;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 110px;
-    }
-
-    h1 {
-        text-align: center;
-        color: #DED2C7;
-        margin: 5px 0px;
-    }
-
-    h1::first-letter {
-        padding-left: 0px;
-    }
-
-    h1 span {
-        display: inline-block;
-        font-size: 6vmax;
-        color: #362D26;
-    }
-
-    h2 {
-        padding: 0px;
-    }
-
-    .instructions-desktop {
-        display: none;
-    }
-
-    .instructions-device {
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .social-media {
-        width: 40%;
-        position: absolute;
-        margin: 0px 0 0 -20%;
-        left: 50%;
-        top: 75%;
-    }
-
-    .fb-share-button {
-        float: left;
-    }
-
-    .twitter-share-button {
-        float: right;
-        padding-top: 0px;
-    }
+  html {
+    background: url(../img/saab-900-intelligent.jpg) no-repeat top center fixed;
+    background-size: cover;
+  }
+  header {
+    padding: 0px;
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+  }
+  h1 {
+    text-align: center;
+    color: #DED2C7;
+    margin: 5px 0px;
+  }
+  h1:first-letter {
+    padding-left: 0px;
+  }
+  h1 span {
+    display: inline-block;
+    font-size: 6vmax;
+    color: #362D26;
+  }
+  h2 {
+    padding: 0px;
+  }
+  .instructions-desktop {
+    display: none;
+  }
+  .instructions-device {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .social-media {
+    width: 40%;
+    position: absolute;
+    margin: 0px 0 0 -20%;
+    left: 50%;
+    top: 75%;
+  }
+  .fb-share-button {
+    float: left;
+  }
+  .twitter-share-button {
+    float: right;
+    padding-top: 0px;
+  }
 }
-
-
