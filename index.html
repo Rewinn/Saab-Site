@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Life is better with a Swedish Saab">
@@ -20,34 +20,31 @@
         <script src="./js/hammer.js"></script>
 
         <!-- FONTS -->
-        <link href='http://fonts.googleapis.com/css?family=Cookie|Roboto|Archivo+Black' rel='stylesheet'>
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Cookie|Roboto|Archivo+Black'>
 
         <!-- Twitter Card data -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@rew_rew_rew">
-        <meta name="twitter:creator" content="@rew_rew_rew">
-        <meta name="twitter:title" content="Get a Saab in your life!">
-        <meta name="twitter:description" content="Visit http://rewinn.github.io/Saab-Site/">
-        <meta name="twitter:image" content="./img/twitter-saab.png">
+        <meta name="twitter:title" content="Get a Saab in your life! #SAABforever">
+        <meta name="twitter:description" content="http://rewinn.github.io/Saab-Site/">
+        <meta name="twitter:image:src" content="http://rewinn.github.io/Saab-Site/">
 
 
         <!-- Open Graph Facebook data -->
-        <meta property="og:title" content="You deserve a Saab." />
-        <meta property="og:url" content="http://rewinn.github.io/Saab-Site/" />
-        <meta property="og:image" content="url(./img/saab99c.jpg)" />
-        <meta property="og:description" content="Crank up the sound. Tap the screen or press a key." /> 
+        <meta property="og:title" content="Get a Saab in your life!"/>
+        <meta property="og:url" content="http://rewinn.github.io/Saab-Site/"/>
+        <meta property="og:image" content="url(./img/saab99c.jpg)"/>
     </head>
     <body>  
         <div id="fb-root"></div>
-        <script>
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>        
+            <script>
+                (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>        
         <audio id="music" preload="auto" autoplay loop>
             <source src="./audio/saabsong.ogg">
             <source src="./audio/saabsong.mp3">
@@ -58,8 +55,8 @@
                 <h2 class="instructions-desktop">Press a letter and crank up the sound!</h2>
                 <h2 class="instructions-device">Tap the screen and crank up the sound!</h2>
                 <div class="social-media">
-                    <div class="fb-share-button" data-href="" data-layout="button"></div>
-                    <a class="twitter-share-button" href="https://twitter.com/share" data-text="Get a Saab in your life. #SAABforever" data-count="none"></a>
+                    <div class="fb-share-button" data-href="http://rewinn.github.io/Saab-Site/" data-layout="button"></div>
+                    <a class="twitter-share-button" href="https://twitter.com/share" data-text="Get a Saab in your life! #SAABforever" data-count="none"></a>
                     <script>
                     window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
                     </script>
@@ -68,7 +65,7 @@
         </div>
         <div class="gyfs">
             <div class="gfy" data-key="65">
-                <img class="gfyitem" data-id="UnawareSparseDuckbillcat" data-controls="false" data-dot="false" data-perimeter="true" data-expand="true" src="./img/1x1.png" alt="Doors opening to reveal a Saab">
+                <img class="gfyitem" data-id="UnawareSparseDuckbillcat" data-controls="false" data-dot="false" data-perimeter="true" data-expand="true" src="./img/1x1.png" alt="Doors opening to reveal Saab">
             </div> 
             <div class="gfy" data-key="66">
                 <img class="gfyitem" data-id="RelievedEnlightenedErne" data-controls="false" data-dot="false" data-perimeter="true" data-expand="true" src="./img/1x1.png" alt="Man surprised by Saab">
@@ -147,7 +144,6 @@
             </div>
         </div>
         <h3 id="letter-key"></h3>
-    <!-- Latest compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="./js/jquery.hammer.js"></script>
     <script src="./js/index.js"></script>
