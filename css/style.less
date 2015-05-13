@@ -1,5 +1,3 @@
-// lessc css/style.less > css/style.css
-
 html {
     background: url(../img/saab99c.jpg) no-repeat; 
     background-position: 50% 80%;
@@ -7,14 +5,6 @@ html {
     overflow-x: hidden;
     overflow-y: hidden;
     height: 100%;
- }
-
-.user-select(@value) {
-    -webkit-user-select: @value;
-     -khtml-user-select: @value;
-       -moz-user-select: @value;
-        -ms-user-select: @value;
-            user-select: @value;
 }
 
 body {
@@ -26,6 +16,14 @@ body {
     -webkit-touch-callout: none;
     .user-select(none);
 } 
+
+.user-select(@value) {
+    -webkit-user-select: @value;
+     -khtml-user-select: @value;
+       -moz-user-select: @value;
+        -ms-user-select: @value;
+            user-select: @value;
+}
 
 header {
     padding: 10px;
@@ -65,23 +63,21 @@ h2 {
 }
 
 @keyframes flickerAnimation {
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
+    0%   {opacity:1;}
+    50%  {opacity:0;}
+    100% {opacity:1;}
 }
 
-.instructions-device {
-    display: none;
+@-moz-keyframes flickerAnimation {
+    0%   {opacity:1;}
+    50%  {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes flickerAnimation {
+    0%   {opacity:1;}
+    50%  {opacity:0;}
+    100% {opacity:1;}
 }
 
 h3 {
@@ -96,11 +92,8 @@ h3 {
     right: 2%;
 }
 
-i {
-    color: black;
-    &::visited { 
-        color: white;
-    }
+.instructions-device {
+    display: none;
 }
 
 /* SOCIAL MEDIA */
@@ -165,9 +158,11 @@ video.gfyVid {
         text-align: center;
         color: #DED2C7;
         margin: 5px 0px;
+
         &:first-letter {
             padding-left: 0px;
         }
+        
         span {
             display: inline-block;
             font-size: 6vmax;
